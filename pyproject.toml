@@ -12,10 +12,3 @@ dependencies = [
     "langgraph>=0.4.8",
     "python-dotenv>=1.1.0",
 ]
-
-[dependency-groups]
-dev = [
-    "black>=25.1.0",
-    "flake8>=7.2.0",
-    "isort>=6.0.1",
-]

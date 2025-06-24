@@ -3,12 +3,16 @@ from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage
 
 # Load environment variables
-load_dotenv()
+try:
+    load_dotenv()
+except  Exception as e:
+    print(f"An error occured: {e}")
 
-
+# Initialize the OpenAI chat model
 llm = ChatOpenAI(model_name="gpt-4.1", temperature=0.2)
 
 
+# Define the main function to interact with the user
 def main():
     print("Hello! how can I help you today? (type 'exit' to quit)")
     while True:
