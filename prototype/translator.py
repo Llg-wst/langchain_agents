@@ -21,5 +21,4 @@ prompt_template = ChatPromptTemplate.from_messages(
 prompt = prompt_template.invoke({"language": "German", "text": "Hello, how are you?"})
 
 response = model.invoke(prompt)
-print(response.content)
-    
+print(response.content) 
